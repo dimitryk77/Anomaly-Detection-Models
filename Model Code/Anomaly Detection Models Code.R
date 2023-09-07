@@ -184,14 +184,6 @@ aggr_plot <- aggr(df_test
 
 
 
-
-
-# observe data
-# summary(mydata)
-# str(mydata)
-# data.frame(colnames(mydata))
-# dplyr::glimpse(mydata)
-
 ################################################################################
 # this code chunk focuses on data cleansing and preparation
 ################################################################################
@@ -235,14 +227,6 @@ y_test<-select(df_test, c("Insp"))
 
 
 
-
-# observe data
-# summary(df_model_baseline)
-# str(df_model_baseline)
-# data.frame(colnames(df_model_baseline))
-# dplyr::glimpse(df_model_baseline)
-
-
 ################################################################################
 # DBSCAN PRE-LIMS
 ################################################################################
@@ -271,15 +255,6 @@ kNNdistplot_v2 <- function(x, k, ...) {
 
 kNNdistplot_v2(x_train_dbscan,k=5)
 abline(h=0.25,lty=2)
-
-
-
-# observe data
-# summary(x_train)
-# str(x_train)
-# data.frame(colnames(x_train))
-# dplyr::glimpse(x_train)
-
 
 
 
